@@ -1,0 +1,10 @@
+C:\Users\Alexandre\Desktop\Github\WinSHA256\bin\Debug\WinSHA256.exe.config
+C:\Users\Alexandre\Desktop\Github\WinSHA256\bin\Debug\WinSHA256.exe
+C:\Users\Alexandre\Desktop\Github\WinSHA256\bin\Debug\WinSHA256.pdb
+C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinSHA256.csproj.AssemblyReference.cache
+C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinSHA256.FrmMenu.resources
+C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinSHA256.Properties.Resources.resources
+C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinSHA256.csproj.GenerateResource.cache
+C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinSHA256.csproj.CoreCompileInputs.cache
+C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinSHA256.exe
+C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinSHA256.pdb
