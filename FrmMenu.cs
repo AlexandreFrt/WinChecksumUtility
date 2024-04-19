@@ -11,7 +11,7 @@ using System.Security.Cryptography;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace WinSHA256
+namespace WinChecksum
 {
     public partial class FrmMenu : Form
     {
@@ -20,11 +20,13 @@ namespace WinSHA256
             InitializeComponent();
         }
 
+        // Lorsqu'il y a une entrée de drag
         private void FrmMenu_DragEnter(object sender, DragEventArgs e)
         {
             e.Effect = DragDropEffects.All;
         }
 
+        // Lorsqu'il y a un fichier qui a été drop, on calcule et on affiche le checksum du fichier 
         private void FrmMenu_DragDrop(object sender, DragEventArgs e)
         {
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop, false);
@@ -32,8 +34,8 @@ namespace WinSHA256
             // Si il n'y a qu'un seul fichier dans le drag
             if (files.Length == 1)
             {
-                string sha256 = ComputeSha256(files);
-                textBoxFileHash.Text = sha256;
+                string hash = ComputeChecksum(files, comboBoxAlgorithm.SelectedItem.ToString());
+                textBoxFileHash.Text = hash;
                 textBoxFilePath.Text = files[0];
             }
             else
@@ -43,12 +45,12 @@ namespace WinSHA256
             }
         }
 
-        private string ComputeSha256(string[] files)
+        private string ComputeChecksum(string[] files, string algorithm)
         {
-            string sha256Hash = "";
+            string hash = "";
 
-            // Initialise l'object SHA256
-            using (SHA256 sha256 = SHA256.Create())
+            // Initialise l'object HashAlgorithm
+            using (var hashAlgorithm = HashAlgorithm.Create(algorithm))
             {
                 if (File.Exists(files[0]))
                 {
@@ -62,9 +64,9 @@ namespace WinSHA256
                             // Être sur qu'il soit positionné au début du stream
                             fileStream.Position = 0;
 
-                            byte[] hashValue = sha256.ComputeHash(fileStream);
+                            byte[] hashValue = hashAlgorithm.ComputeHash(fileStream);
 
-                            sha256Hash = NormalizeSha256Hash(hashValue);
+                            hash = NormalizeHash(hashValue);
                         }
                         catch (IOException error)
                         {
@@ -82,17 +84,17 @@ namespace WinSHA256
                 }
             }
 
-            return sha256Hash;
+            return hash;
         }
 
         // Procédure qui renormalise le hash, supprime les -, et le convertit en minuscule
-        private string NormalizeSha256Hash(byte[] bytes)
+        private string NormalizeHash(byte[] bytes)
         {
-            string sha256 = BitConverter.ToString(bytes);
-            sha256 = sha256.ToLower();
-            sha256 = sha256.Replace("-", "");
+            string hash = BitConverter.ToString(bytes);
+            hash = hash.ToLower();
+            hash = hash.Replace("-", "");
 
-            return sha256;
+            return hash;
         }
 
         private void buttonImport_Click(object sender, EventArgs e)
@@ -104,8 +106,8 @@ namespace WinSHA256
         private void openFileDialog_FileOk(object sender, CancelEventArgs e)
         {
             string[] files = openFileDialog.FileNames;
-            string sha256 = ComputeSha256(files);
-            textBoxFileHash.Text = sha256;
+            string hash = ComputeChecksum(files, comboBoxAlgorithm.SelectedItem.ToString());
+            textBoxFileHash.Text = hash;
             textBoxFilePath.Text = files[0];
         }
 
@@ -126,8 +128,8 @@ namespace WinSHA256
             string[] files = new string[1];
             files[0] = textBoxFilePath.Text;
             files[0] = RemoveInvisibleCharacters(files[0]);
-            string sha256Hash = ComputeSha256(files);
-            textBoxFileHash.Text = sha256Hash;
+            string hash = ComputeChecksum(files, comboBoxAlgorithm.SelectedItem.ToString());
+            textBoxFileHash.Text = hash;
         }
 
         // Fonction qui utilise une expression régulière pour remplacer les caractères invisibles et retourne la valeur une fois modifié

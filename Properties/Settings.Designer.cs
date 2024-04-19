@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WinSHA256.Properties
+namespace WinChecksum.Properties
 {
 
 
