@@ -183,7 +183,9 @@
             // 
             this.comboBoxAlgorithm.FormattingEnabled = true;
             this.comboBoxAlgorithm.Items.AddRange(new object[] {
+            "SHA1",
             "SHA-256",
+            "SHA-384",
             "SHA-512",
             "MD5"});
             this.comboBoxAlgorithm.Location = new System.Drawing.Point(3, 109);
@@ -191,6 +193,7 @@
             this.comboBoxAlgorithm.Size = new System.Drawing.Size(121, 21);
             this.comboBoxAlgorithm.TabIndex = 10;
             this.comboBoxAlgorithm.Text = "SHA-256";
+            this.comboBoxAlgorithm.SelectedIndexChanged += new System.EventHandler(this.comboBoxAlgorithm_SelectedIndexChanged);
             // 
             // label4
             // 

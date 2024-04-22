@@ -137,5 +137,14 @@ namespace WinChecksum
         {
             return Regex.Replace(input, @"\p{C}", "");
         }
+
+        private void comboBoxAlgorithm_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string[] files = new string[1];
+            files[0] = textBoxFilePath.Text;
+            files[0] = RemoveInvisibleCharacters(files[0]);
+            string hash = ComputeChecksum(files, comboBoxAlgorithm.SelectedItem.ToString());
+            textBoxFileHash.Text = hash;
+        }
     }
 }

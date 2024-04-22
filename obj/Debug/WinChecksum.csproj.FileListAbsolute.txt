@@ -8,3 +8,13 @@ C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinChecksum.csproj.Generat
 C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinChecksum.csproj.CoreCompileInputs.cache
 C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinSHA256.exe
 C:\Users\Alexandre\Desktop\Github\WinSHA256\obj\Debug\WinSHA256.pdb
+C:\Users\user\Desktop\Projets\WinChecksumUtility\bin\Debug\WinSHA256.exe.config
+C:\Users\user\Desktop\Projets\WinChecksumUtility\bin\Debug\WinSHA256.exe
+C:\Users\user\Desktop\Projets\WinChecksumUtility\bin\Debug\WinSHA256.pdb
+C:\Users\user\Desktop\Projets\WinChecksumUtility\obj\Debug\WinChecksum.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Projets\WinChecksumUtility\obj\Debug\WinChecksum.FrmMenu.resources
+C:\Users\user\Desktop\Projets\WinChecksumUtility\obj\Debug\WinSHA256.Properties.Resources.resources
+C:\Users\user\Desktop\Projets\WinChecksumUtility\obj\Debug\WinChecksum.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Projets\WinChecksumUtility\obj\Debug\WinChecksum.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Projets\WinChecksumUtility\obj\Debug\WinSHA256.exe
+C:\Users\user\Desktop\Projets\WinChecksumUtility\obj\Debug\WinSHA256.pdb
