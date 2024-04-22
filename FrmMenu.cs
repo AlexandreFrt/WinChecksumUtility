@@ -67,6 +67,8 @@ namespace WinChecksum
                             byte[] hashValue = hashAlgorithm.ComputeHash(fileStream);
 
                             hash = NormalizeHash(hashValue);
+
+                            buttonCopy.Text = "Copier...";
                         }
                         catch (IOException error)
                         {
@@ -145,6 +147,15 @@ namespace WinChecksum
             files[0] = RemoveInvisibleCharacters(files[0]);
             string hash = ComputeChecksum(files, comboBoxAlgorithm.SelectedItem.ToString());
             textBoxFileHash.Text = hash;
+        }
+
+        private void buttonCopy_Click(object sender, EventArgs e)
+        {
+            if (!textBoxFileHash.Text.Equals(""))
+            {
+                Clipboard.SetText(textBoxFileHash.Text);
+                buttonCopy.Text = "Copié...";
+            }
         }
     }
 }

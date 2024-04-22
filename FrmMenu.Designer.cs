@@ -41,6 +41,7 @@
             this.buttonComputeChecksum = new System.Windows.Forms.Button();
             this.comboBoxAlgorithm = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.buttonCopy = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -58,16 +59,17 @@
             this.tableLayoutMain.RowCount = 1;
             this.tableLayoutMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 99.99999F));
             this.tableLayoutMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 331F));
-            this.tableLayoutMain.Size = new System.Drawing.Size(767, 331);
+            this.tableLayoutMain.Size = new System.Drawing.Size(827, 331);
             this.tableLayoutMain.TabIndex = 0;
             this.tableLayoutMain.DragDrop += new System.Windows.Forms.DragEventHandler(this.FrmMenu_DragDrop);
             this.tableLayoutMain.DragEnter += new System.Windows.Forms.DragEventHandler(this.FrmMenu_DragEnter);
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.58069F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.41931F));
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.14616F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.866017F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.866017F));
             this.tableLayoutPanel1.Controls.Add(this.textBoxOriginalChecksumValue, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
@@ -79,6 +81,7 @@
             this.tableLayoutPanel1.Controls.Add(this.buttonComputeChecksum, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.comboBoxAlgorithm, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.buttonCopy, 2, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -91,7 +94,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.51072F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.617241F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.56486F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(761, 325);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(821, 325);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // textBoxOriginalChecksumValue
@@ -99,7 +102,7 @@
             this.textBoxOriginalChecksumValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxOriginalChecksumValue.Location = new System.Drawing.Point(3, 257);
             this.textBoxOriginalChecksumValue.Name = "textBoxOriginalChecksumValue";
-            this.textBoxOriginalChecksumValue.Size = new System.Drawing.Size(675, 23);
+            this.textBoxOriginalChecksumValue.Size = new System.Drawing.Size(652, 23);
             this.textBoxOriginalChecksumValue.TabIndex = 5;
             // 
             // label2
@@ -128,7 +131,7 @@
             this.textBoxFileHash.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFileHash.Location = new System.Drawing.Point(3, 183);
             this.textBoxFileHash.Name = "textBoxFileHash";
-            this.textBoxFileHash.Size = new System.Drawing.Size(675, 23);
+            this.textBoxFileHash.Size = new System.Drawing.Size(652, 23);
             this.textBoxFileHash.TabIndex = 2;
             // 
             // label3
@@ -146,12 +149,12 @@
             this.textBoxFilePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFilePath.Location = new System.Drawing.Point(3, 24);
             this.textBoxFilePath.Name = "textBoxFilePath";
-            this.textBoxFilePath.Size = new System.Drawing.Size(675, 23);
+            this.textBoxFilePath.Size = new System.Drawing.Size(652, 23);
             this.textBoxFilePath.TabIndex = 9;
             // 
             // buttonImport
             // 
-            this.buttonImport.Location = new System.Drawing.Point(684, 24);
+            this.buttonImport.Location = new System.Drawing.Point(661, 24);
             this.buttonImport.Name = "buttonImport";
             this.buttonImport.Size = new System.Drawing.Size(74, 23);
             this.buttonImport.TabIndex = 6;
@@ -161,7 +164,7 @@
             // 
             // buttonCheckChecksum
             // 
-            this.buttonCheckChecksum.Location = new System.Drawing.Point(684, 257);
+            this.buttonCheckChecksum.Location = new System.Drawing.Point(661, 257);
             this.buttonCheckChecksum.Name = "buttonCheckChecksum";
             this.buttonCheckChecksum.Size = new System.Drawing.Size(74, 23);
             this.buttonCheckChecksum.TabIndex = 7;
@@ -171,7 +174,7 @@
             // 
             // buttonComputeChecksum
             // 
-            this.buttonComputeChecksum.Location = new System.Drawing.Point(684, 183);
+            this.buttonComputeChecksum.Location = new System.Drawing.Point(661, 183);
             this.buttonComputeChecksum.Name = "buttonComputeChecksum";
             this.buttonComputeChecksum.Size = new System.Drawing.Size(74, 23);
             this.buttonComputeChecksum.TabIndex = 7;
@@ -205,6 +208,16 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Selectionner un algorithme de hashage :";
             // 
+            // buttonCopy
+            // 
+            this.buttonCopy.Location = new System.Drawing.Point(742, 183);
+            this.buttonCopy.Name = "buttonCopy";
+            this.buttonCopy.Size = new System.Drawing.Size(74, 23);
+            this.buttonCopy.TabIndex = 7;
+            this.buttonCopy.Text = "Copier...";
+            this.buttonCopy.UseVisualStyleBackColor = true;
+            this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
+            // 
             // openFileDialog
             // 
             this.openFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog_FileOk);
@@ -214,10 +227,10 @@
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 331);
+            this.ClientSize = new System.Drawing.Size(827, 331);
             this.Controls.Add(this.tableLayoutMain);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(809, 406);
+            this.MaximumSize = new System.Drawing.Size(880, 406);
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "WinChecksum Utility";
@@ -246,6 +259,7 @@
         private System.Windows.Forms.Button buttonComputeChecksum;
         private System.Windows.Forms.ComboBox comboBoxAlgorithm;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonCopy;
     }
 }
 
