@@ -1,10 +1,8 @@
 C:\Users\Alexandre\Desktop\Github\WinChecksumUtility\bin\Release\WinSHA256.exe.config
 C:\Users\Alexandre\Desktop\Github\WinChecksumUtility\bin\Release\WinSHA256.exe
-C:\Users\Alexandre\Desktop\Github\WinChecksumUtility\bin\Release\WinSHA256.pdb
 C:\Users\Alexandre\Desktop\Github\WinChecksumUtility\obj\Release\WinChecksum.csproj.AssemblyReference.cache
 C:\Users\Alexandre\Desktop\Github\WinChecksumUtility\obj\Release\WinChecksum.FrmMenu.resources
 C:\Users\Alexandre\Desktop\Github\WinChecksumUtility\obj\Release\WinSHA256.Properties.Resources.resources
 C:\Users\Alexandre\Desktop\Github\WinChecksumUtility\obj\Release\WinChecksum.csproj.GenerateResource.cache
 C:\Users\Alexandre\Desktop\Github\WinChecksumUtility\obj\Release\WinChecksum.csproj.CoreCompileInputs.cache
 C:\Users\Alexandre\Desktop\Github\WinChecksumUtility\obj\Release\WinSHA256.exe
-C:\Users\Alexandre\Desktop\Github\WinChecksumUtility\obj\Release\WinSHA256.pdb
