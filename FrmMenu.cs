@@ -117,11 +117,11 @@ namespace WinChecksum
         {
             if (!textBoxFileHash.Text.Equals(textBoxOriginalChecksumValue.Text))
             {
-                MessageBox.Show("Le checksum du fichier est : " + textBoxFileHash.Text + "\nLe checksum original du fichier est : " + textBoxOriginalChecksumValue.Text + "\n\nLES CHECKSUM NE SE CORRESPONDENT PAS !!!", "Vérification du checksum", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Le checksum du fichier est : " + textBoxFileHash.Text + "\nLe checksum original du fichier est : " + textBoxOriginalChecksumValue.Text + "\n\nLES CHECKSUMS NE SE CORRESPONDENT PAS !", "Vérification du checksum", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Le checksum du fichier est : " + textBoxFileHash.Text + "\nLe checksum original du fichier est : " + textBoxOriginalChecksumValue.Text + "\n\nLes checksum se correspondent.", "Vérification du checksum", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Le checksum du fichier est : " + textBoxFileHash.Text + "\nLe checksum original du fichier est : " + textBoxOriginalChecksumValue.Text + "\n\nLes checksums se correspondent.", "Vérification du checksum", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
