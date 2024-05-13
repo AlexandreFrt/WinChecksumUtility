@@ -127,6 +127,7 @@
             this.textBoxOriginalChecksumValue.Name = "textBoxOriginalChecksumValue";
             this.textBoxOriginalChecksumValue.Size = new System.Drawing.Size(687, 23);
             this.textBoxOriginalChecksumValue.TabIndex = 5;
+            this.textBoxOriginalChecksumValue.Text = "Collez le checksum original du fichier pour vérifier";
             // 
             // label2
             // 

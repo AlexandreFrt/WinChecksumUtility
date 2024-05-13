@@ -80,7 +80,7 @@ namespace WinChecksum
                         }
                     }
                 }
-                else
+                else if (textBoxFilePath.Text.Length > 0)
                 {
                     MessageBox.Show("Le fichier : " + files[0] + " n'existe pas", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
