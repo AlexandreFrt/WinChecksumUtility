@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.IO;
@@ -117,7 +115,7 @@ namespace WinChecksum
         {
             if (!textBoxFileHash.Text.Equals(textBoxOriginalChecksumValue.Text))
             {
-                MessageBox.Show("Le checksum du fichier est : " + textBoxFileHash.Text + "\nLe checksum original du fichier est : " + textBoxOriginalChecksumValue.Text + "\n\nLES CHECKSUMS NE SE CORRESPONDENT PAS !", "Vérification du checksum", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Le checksum du fichier est : " + textBoxFileHash.Text + "\nLe checksum original du fichier est : " + textBoxOriginalChecksumValue.Text + "\n\nLES CHECKSUMS NE SE CORRESPONDENT PAS !", "Vérification du checksum", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
